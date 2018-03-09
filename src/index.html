@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!--<meta name="viewport"-->
+  <!--content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
+  <!--<meta http-equiv="X-UA-Compatible" content="ie=edge">-->
+  <title>Document</title>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <!-- build:css css/style.css -->
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/footer.css" rel="stylesheet">
+  <link href="css/header.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/checkbox.css" rel="stylesheet">
+  <link href="css/container.css" rel="stylesheet">
+  <!-- endbuild -->
+</head>
+<body>
+<header>
+  <nav>
+    <div class="flex text-uppercase">
+      <div class="logo"></div>
+      <div class="nav flex">
+        <div ><a href="#">Անշարժ գույք </a></div>
+        <div><a href="#">Ավելացնել <br/> հայտարարություն</a></div>
+        <div><a href="#">Իմ էջը</a></div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="container">
+    <div class="announcement">
+        <div class="title">Հայտարարության անվանումը</div>
+        <div class="input">
+          <label for="1"></label>
+          <input type="text" id="1">
+        </div>
+    </div>
+    <div class="content">
+       <div class="left">
+         <div class="load-picture">
+           <div class="title">Բեռնել նկարներ</div>
+           <div class="content">
+             <div class="left-arrow">
+               <i class="fas fa-chevron-left"></i>
+             </div>
+             <div class="pictures">
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+               <div class="add-pictures">
+                 <span>Ավելացնել նկարներ</span>
+                 <input type="file" multiple style="opacity: 0">
+               </div>
+             </div>
+             <div class="right-arrow">
+               <i class="fas fa-chevron-right"></i>
+             </div>
+           </div>
+         </div>
+         <div class="information">
+           <div class="title">Տեղեկատվություն</div>
+           <div class="description">
+             <label for="desc"></label>
+             <textarea name="info-desc" id="desc"></textarea>
+           </div>
+         </div>
+         <div class="general-information">
+           <div class="title"> Ընդանուր տեղեկատվություն</div>
+           <div class="content">
+             <div class="price">
+               <label for="price">Գին</label>
+               <input type="text" id="price" name="price">
+             </div>
+             <div class="floor">
+               <label for="floor">Հարկ</label>
+               <input type="text" id="floor" name="floor">
+             </div>
+             <div class="area">
+               <label for="area">Մակերես</label>
+               <input type="text" id="area" name="area" >
+             </div>
+             <div class="address">
+               <label for="address">Հասցե</label>
+               <input type="text" id="address" name="address">
+             </div>
+             <div class="community">
+               <label for="community">Համայնք</label>
+               <input type="text" id="community" name="community">
+             </div>
+           </div>
+         </div>
+         <div class="types">
+           <div class="securety">
+             <label class="custom-checkbox">
+               Անվտանգության համակարգ
+               <input type="checkbox">
+               <span class="checkmark"></span>
+             </label>
+           </div>
+           <div class="flex">
+             <div class="iron-door">
+               <label class="custom-checkbox">
+                 Երկաթյա դուռ
+                 <input type="checkbox">
+                 <span class="checkmark"></span>
+               </label>
+             </div>
+             <div class="furniture">
+               <label class="custom-checkbox">
+                 Կահույք
+                 <input type="checkbox">
+                 <span class="checkmark"></span>
+               </label>
+             </div>
+           </div>
+           <div class="flex">
+             <div class="elevator">
+               <label class="custom-checkbox">
+                 Վերելակ
+                 <input type="checkbox">
+                 <span class="checkmark"></span>
+               </label>
+             </div>
+             <div class="storage">
+               <label class="custom-checkbox">
+                 Խորդանոց
+                 <input type="checkbox">
+                 <span class="checkmark"></span>
+               </label>
+             </div>
+           </div>
+           <div class="basement">
+             <label class="custom-checkbox">
+               Նկուղ
+               <input type="checkbox">
+               <span class="checkmark"></span>
+             </label>
+           </div>
+         </div>
+         <div class="օther">
+           <div>Այլ</div>
+         </div>
+       </div>
+       <div class="right">
+         <div class="type">Հայտարարության տեսակը</div>
+         <div class="sale">
+           <label class="custom-checkbox">
+             Վաճառք
+             <input type="checkbox">
+             <span class="checkmark"></span>
+           </label>
+         </div>
+         <div class="rent">
+           <label class="custom-checkbox">
+             Վարձակալություն
+             <input type="checkbox">
+             <span class="checkmark"></span>
+           </label>
+         </div>
+         <div class="help">
+             <small><sup>*</sup>կարող ենք երկուսն էլ ընտրել</small>
+         </div>
+         <div class="house"
+         >
+           <label class="custom-checkbox">
+             Բնակարան
+             <input type="checkbox">
+             <span class="checkmark"></span>
+           </label>
+         </div>
+         <div class="palace"
+         >
+           <label class="custom-checkbox">
+            Առանձնատուն
+             <input type="checkbox">
+             <span class="checkmark"></span>
+           </label>
+         </div>
+         <div class="office-space">
+           <label class="custom-checkbox">
+             Գրասենակային տարածք
+             <input type="checkbox">
+             <span class="checkmark"></span>
+           </label>
+         </div>
+         <div class="commercial-space"
+         >
+           <label class="custom-checkbox">
+             Կոմերցիոն տարածք
+             <input type="checkbox">
+             <span class="checkmark"></span>
+           </label>
+         </div>
+         <div class="garage">
+           <label class="custom-checkbox">
+             Ավտոտնակ
+             <input type="checkbox">
+             <span class="checkmark"></span>
+           </label>
+         </div>
+         <div class="land-area">
+           <label class="custom-checkbox">
+             Հողատարածք
+             <input type="checkbox">
+             <span class="checkmark"></span>
+           </label>
+         </div>
+         <div class="type">Մուտք</div>
+         <div class="street֊access">
+           <label class="custom-checkbox">
+            Փողոցի կողմից
+             <input type="checkbox">
+             <span class="checkmark"></span>
+           </label>
+         </div>
+         <div class="yard֊access">
+           <label class="custom-checkbox">
+             Բակի կողմից
+             <input type="checkbox">
+             <span class="checkmark"></span>
+           </label>
+         </div>
+         <div class="gate֊access">
+           <label class="custom-checkbox">
+             Շքամուտք
+             <input type="checkbox">
+             <span class="checkmark"></span>
+           </label>
+         </div>
+         <div class="separately֊access">
+           <label class="custom-checkbox">
+             Առանձին մուտք
+             <input type="checkbox">
+             <span class="checkmark"></span>
+           </label>
+         </div>
+         <div class="օther">
+            <div>Այլ</div>
+         </div>
+         <div class="save-button">
+           <button>Պահպանել</button>
+         </div>
+       </div>
+    </div>
+</div>
+<footer>
+  <div class="flex">
+    <div class="contacts">
+      <div class="contact-us text-uppercase"><h3>կապ մեզ հետ </h3></div>
+      <div class="address"><b>Հասցե՝</b> Լորիս Ճգնավորյան 4/2</div>
+      <div class="email-address"><b>ԷԼ. ՀԱՍՑԵ՝</b> nyanyanya@mail.com</div>
+      <div class="phone"><b>ՀԵՌ․</b> +374 00 00000</div>
+    </div>
+    <div class="rules">
+      <div class="use-rules text-uppercase"><h3><a href="#">ԿԱՅՔԻՑ ՕԳՏՎԵԼՈՒ ԿԱՆՈՆՆԵՐ</a></h3></div>
+      <div class="socicon">
+        <ul>
+          <li class="icon-instagram"><i class="fab fa-instagram"></i></li>
+          <li class="icon-facebook"><i class="fab fa-facebook"></i></li>
+        </ul>
+      </div>
+    </div>
+    <div class="abouts">
+      <div class="about-us text-uppercase"><h3><a href="#">ՄԵՐ ՄԱՍԻՆ</a></h3></div>
+      <div class="copyright">
+        <span>&#169; 2018 RedLine</span>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,24 @@
+header nav {
+    width: 100%;
+    min-height: 70px;
+    background-color: #43454d;
+}
+header .nav {
+    margin-top: 20px;
+    flex: 2;
+    justify-content: space-around;
+}
+header .nav , header nav > div , header .nav > div{
+    display: flex;
+}
+header nav > div div.logo{
+    flex-grow: 1;
+}
+header nav a {
+    text-decoration: none;
+    color: #a3aebd;
+    display: inline-flex;
+    margin: auto;
+    text-align: center;
+
+}

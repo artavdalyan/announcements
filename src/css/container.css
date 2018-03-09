@@ -1,0 +1,245 @@
+.container {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    margin: 70px auto 40px;
+    width: calc(100% - 180px);
+}
+.container .announcement {
+    margin-bottom: 30px;
+}
+.container .announcement .title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+.container .announcement .input input {
+    outline: none;
+    max-width: 672px;
+    width: 100%;
+    min-height: 34px;
+    border-radius: 20px;
+    border: none;
+    padding: 0 15px;
+}
+.container .announcement .input input:placeholder-shown {
+    padding: 30px;
+}
+.container .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 100%;
+}
+.container .content .left {
+    border-top: 1px solid gray;
+    -ms-flex-preferred-size: 473.5px;
+    flex-basis: 473.5px;
+}
+.container .content .left ․load-picture {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.container .content > .left .title {
+    font-weight: bold;
+    margin: 20px 0;
+}
+.container .content .right {
+    position: relative;
+    -ms-flex-preferred-size: calc(100% - 473.5px - 125px);
+    flex-basis: calc(100% - 473.5px - 125px);
+}
+.container .content > .left .pictures ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.container .content > .left .pictures ul li {
+    width: 59.9px;
+    height: 64px;
+    background-color: #fff;
+}
+.container .load-picture > .content > .pictures {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+.container .load-picture > .content > .left-arrow, .container .load-picture > .content > .right-arrow {
+    font-size: 50px;
+    color: #676968;
+    cursor: pointer;
+    margin-top: 8px;
+    margin-bottom: auto;
+}
+.container .load-picture > .content > .left-arrow {
+    margin-right: 20px;
+}
+.container .load-picture > .content > .right-arrow {
+    margin-left: 20px;
+}
+.container .content > .left > .information {
+    border-top: 1px solid gray;
+    margin-bottom: 30px;
+}
+.container .content > .left > .information textarea {
+    outline: none;
+    resize: none;
+    border-radius: 10px;
+    width: 390px;
+    height: 99px;
+    border: none;
+    padding: 10px;
+}
+.left .load-picture {
+    margin-bottom: 30px;
+}
+.add-pictures {
+    margin-left: 50px;
+    position: relative;
+    top: 15px;
+}
+.add-pictures span {
+    color: #576466;
+    text-decoration: underline;
+}
+.general-information {
+    border-top: 1px solid gray ;
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+}
+.general-information > .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    line-height: 0;
+}
+.general-information > .content > div{
+    margin: 10px 0;
+}
+.general-information label{
+    margin: 10px 0;
+}
+.general-information input {
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+.general-information input[name='price'], .general-information input[name='floor'] {
+    max-width: 133px;
+    width: 100%;
+    height: 25px;
+    margin-left: 50px;
+    padding: 10px;
+}
+.general-information input[name='floor']{
+    margin-left: 34px;
+}
+.general-information input[name='area'] {
+    max-width: 260px;
+    width: 100%;
+    height: 27px;
+    margin-left: 2px;
+    padding: 10px;
+}
+.general-information input[name='address'] {
+    max-width: 379px;
+    width: 100%;
+    height: 28.29px;
+    margin-left: 22px;
+    padding: 10px;
+
+}
+.general-information input[name='community'] {
+    max-width: 260px;
+    width: 100%;
+    height: 27px;
+    padding: 10px;
+    margin-left: 2px;
+}
+
+.container .content .right > .type {
+    font-weight: bold;
+    margin: 20px 0;
+}
+.container .content .right > div {
+    margin: 25px 0;
+}
+.container .content .right > div:first-child {
+    margin-top: 5px
+}
+.container .content .right > div.house{
+    border-top: 1px solid gray;
+    padding-top: 10px;
+}
+.container .content .right > div.land-area{
+    border-bottom: 1px solid gray;
+}
+.add-pictures input[type='file']{
+    opacity: 0;
+    position: absolute;
+    left: -15px;
+    top: -1px;
+}
+.container .content .right > div.օther , .container .content .left > div.օther {
+    max-width: 211px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 5px 10px ;
+    width: 100%;
+}
+.container .content .left > div.types {
+    margin-top: 20px;
+}
+.container .content .left > div.types > div{
+    margin: 35px 0 35px 0;
+}
+.container .content .left > div.types .flex {
+    max-width: 380px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.container .content .left > div.types .flex > .storage {
+    position: relative;
+    left: 23px;
+}
+.save-button button {
+    width: 184px;
+    height: 44px;
+    background-color: #454852;
+    border-radius: 20px;
+    border: none;
+    color: #7382a3;
+    outline: none;
+    position: absolute;
+    bottom: 0;
+    left:102px;
+}
+@-moz-document url-prefix() {
+    .save-button button {
+        bottom: 77px;
+    }
+}

@@ -1,0 +1,76 @@
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.text-uppercase{
+    text-transform: uppercase;
+}
+footer {
+    width: 100%;
+    min-height: 200px;
+    background-color: #43454d
+}
+footer .flex {
+    display: flex;
+    margin: 0 65px;
+    justify-content: space-between;
+}
+footer .flex h3  a , footer .flex h3 {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+footer .socicon ul {
+    list-style: none;
+    font-size: 2rem;
+    display: flex;
+    max-width: 100px;
+    justify-content: center;
+}
+footer .socicon ul li{
+    margin: 0 10px;
+    cursor: pointer;
+}
+footer .socicon ul li svg{
+    background: white;
+}
+footer .socicon ul li svg path {
+    fill: #576a85;
+}
+footer > div, footer > div > div {
+    min-height: inherit;
+}
+footer .socicon ul{
+    margin: auto;
+}
+footer .contacts , footer .rules, footer .abouts{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+footer .rules{
+    flex-grow: 2;
+}
+footer .abouts {
+    flex-grow: 1;
+}
+footer .contacts > div {
+    margin-bottom: 10px;
+}
+footer .contacts b {
+    color: #7382a3
+}
+footer .rules .use-rules{
+    margin-bottom: 60px;
+}
+footer .abouts .about-us {
+    margin-bottom: 80px;
+}
+footer .abouts .copyright span {
+    float: right;
+}
+footer .contacts, footer .abouts {
+    color: #7f8898;
+}
