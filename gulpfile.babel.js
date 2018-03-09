@@ -1,19 +1,19 @@
-const gulp = require('gulp');
-const browserSync = require('browser-sync');
-const sass = require('gulp-sass');
-const sourcemaps = require('gulp-sourcemaps');
-const autoprefixer = require('gulp-autoprefixer');
-const cleanCSS = require('gulp-clean-css');
-const uglify = require('gulp-uglify');
-const concat = require('gulp-concat');
-const imagemin = require('gulp-imagemin');
-const changed = require('gulp-changed');
-const htmlReaplce = require('gulp-html-replace');
-const htmlMin = require('gulp-htmlmin');
-const del = require('del');
-const sequence = require('run-sequence');
-const useref = require('gulp-useref');
-const gulpif = require('gulp-if');
+import gulp from 'gulp';
+import browserSync from 'browser-sync';
+import sass from 'gulp-sass';
+import sourcemaps from 'gulp-sourcemaps';
+import autoprefixer from 'gulp-autoprefixer';
+import cleanCSS from 'gulp-clean-css';
+import uglify from 'gulp-uglify';
+import concat from 'gulp-concat';
+import imagemin from 'gulp-imagemin';
+import changed from 'gulp-changed';
+import htmlReaplce from 'gulp-html-replace';
+import htmlMin from 'gulp-htmlmin';
+import del from 'del';
+import sequence from 'run-sequence';
+import useref from 'gulp-useref';
+import gulpif from 'gulp-if';
 
 const config = {
 	dist: 'dist/',
@@ -34,10 +34,10 @@ const config = {
 	jsreplaceout: 'js/script.js'
 };
 
-gulp.task('reload', function () {
+gulp.task('reload', () => {
 	browserSync.reload();
 });
-gulp.task('serve',['css', 'html'],  function () {
+gulp.task('serve', ['css', 'html'], () => {
 	browserSync({
 		server: config.dist
 	});
@@ -45,7 +45,7 @@ gulp.task('serve',['css', 'html'],  function () {
 	gulp.watch([config.htmlin], ['html', 'reload'])
 	// gulp.watch(config.scssin, ['sass']);
 });
-gulp.task('sass', function () {
+gulp.task('sass', () => {
 	return gulp.src(config.scssin)
 		.pipe(sourcemaps.init())
 		.pipe(sass().on('error', sass.logError))
@@ -57,7 +57,7 @@ gulp.task('sass', function () {
 		.pipe(browserSync.stream());
 });
 
-gulp.task('css', function () {
+gulp.task('css', () => {
 	return gulp.src(config.cssin)
 		.pipe(autoprefixer())
 		.pipe(concat(config.cssoutname))
@@ -66,20 +66,20 @@ gulp.task('css', function () {
 		;
 });
 
-gulp.task('js', function () {
+gulp.task('js', () => {
 	return gulp.src(config.jsin)
 		.pipe(concat(config.jsoutname))
 		.pipe(gulp.dest(config.jsout));
 });
 
-gulp.task('img', function () {
+gulp.task('img', () => {
 	return gulp.src(config.imgin)
 		.pipe(changed(config.imgout))
 		.pipe(imagemin())
 		.pipe(gulp.dest(config.imgout));
 });
 
-gulp.task('html', function () {
+gulp.task('html', () => {
 	return gulp.src('src/*.html')
 		.pipe(useref())
 		.pipe(gulpif('*.css', cleanCSS()))
@@ -91,11 +91,11 @@ gulp.task('html', function () {
 		.pipe(gulp.dest(config.dist))
 });
 
-gulp.task('clean', function () {
+gulp.task('clean', () => {
 	return del([config.dist]);
 });
 
-gulp.task('build', function () {
+gulp.task('build', () => {
 	return sequence('clean', ['css', 'js', 'html']);
 });
 gulp.task('default', ['serve']);
